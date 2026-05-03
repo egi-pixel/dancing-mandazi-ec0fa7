@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Op. Dr. Turab İsmayilov | Plastik & Estetik Cerrahi</title>
+  <meta name="description" content="Op. Dr. Turab İsmayilov — Plastik, Estetik ve Rekonstrüktif Cerrahi Uzmanı. Liposuction, Rinoplasti, Karın Germe, Lipödem, Yüz Germe operasyonları.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XXGK442');</script>
+  <!-- End Google Tag Manager -->
+  <style>
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #0A0A0A 0%, #151515 50%, #0A0A0A 100%);
+    }
+
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 20% 80%, rgba(201,168,76,0.04) 0%, transparent 50%);
+    }
+
+    .hero-image-side {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      overflow: hidden;
+    }
+
+    .hero-image-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      opacity: 0.4;
+    }
+
+    .hero-image-side::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, var(--black) 0%, transparent 40%, transparent 70%, var(--black) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 60px;
+      max-width: 700px;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 0.6rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      margin-bottom: 30px;
+      font-weight: 400;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+      display: block;
+    }
+
+    .hero-subtitle {
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 30px;
+      font-weight: 400;
+    }
+
+    .hero p {
+      font-size: 0.95rem;
+      line-height: 1.9;
+      color: rgba(245,240,232,0.65);
+      max-width: 480px;
+      margin-bottom: 40px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--black);
+      padding: 16px 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover { background: var(--gold-light); }
+
+    .btn-outline {
+      border: 1px solid rgba(245,240,232,0.3);
+      color: var(--white);
+      padding: 16px 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 400;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+    .hero-stats {
+      position: absolute;
+      bottom: 50px;
+      right: 60px;
+      display: flex;
+      gap: 40px;
+      z-index: 2;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      color: var(--gold);
+      font-weight: 300;
+      display: block;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-top: 5px;
+    }
+
+    /* SERVICES */
+    .services-section {
+      padding: 100px 60px;
+      background: var(--dark);
+    }
+
+    .services-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(201,168,76,0.1);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background: var(--dark2);
+      padding: 45px 35px;
+      text-decoration: none;
+      transition: background 0.3s;
+      border-bottom: 2px solid transparent;
+      display: block;
+    }
+
+    .service-card:hover {
+      background: var(--dark3);
+      border-bottom-color: var(--gold);
+    }
+
+    .service-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      color: rgba(201,168,76,0.15);
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: var(--white);
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 0.8rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    .service-arrow {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--gold);
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* ABOUT */
+    .about-section {
+      padding: 100px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-img-wrap {
+      position: relative;
+    }
+
+    .about-img-wrap img {
+      width: 100%;
+      height: 550px;
+      object-fit: cover;
+      object-position: top;
+      border: 1px solid rgba(201,168,76,0.2);
+    }
+
+    .about-img-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--gold);
+      color: var(--black);
+      padding: 20px 25px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .about-img-badge span {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    .about-text p {
+      font-size: 0.9rem;
+      line-height: 1.9;
+      color: rgba(245,240,232,0.75);
+      margin-bottom: 20px;
+    }
+
+    .about-text .expertise {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .expertise-tag {
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--gold);
+      padding: 6px 16px;
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* CONTACT STRIP */
+    .contact-strip {
+      background: var(--dark2);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    .contact-strip h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    .contact-strip p {
+      color: var(--gray);
+      font-size: 0.85rem;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content { padding: 0 20px; padding-top: 100px; }
+      .hero-image-side { width: 100%; opacity: 0.2; }
+      .hero-stats { position: static; flex-direction: row; justify-content: center; padding: 0 20px 40px; }
+      .services-section { padding: 60px 20px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .about-section { padding: 60px 20px; grid-template-columns: 1fr; }
+      .about-img-badge { right: 10px; bottom: 10px; }
+      .contact-strip { padding: 60px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XXGK442"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="nav-placeholder"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-image-side">
+      <img src="images/hero.png" alt="Op. Dr. Turab İsmayilov">
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">Plastik & Estetik Cerrahi</div>
+      <h1>Op. Dr. Turab
+        <em>İsmayilov</em>
+      </h1>
+      <p class="hero-subtitle">Rekonstrüktif Cerrahi Uzmanı</p>
+      <p>Güzellik, özgüven ve sağlığınız için en modern tekniklerle, güvenli ve doğal sonuçlar sunan uzman cerrahi bakım.</p>
+      <div class="hero-btns">
+        <a href="#iletisim" class="btn-primary">Ücretsiz Konsültasyon</a>
+        <a href="tel:+905466398033" class="btn-outline">0546 639 80 33</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Başarılı Operasyon</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Yıl Deneyim</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">%98</span>
+        <span class="stat-label">Hasta Memnuniyeti</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section">
+    <div class="services-header">
+      <p class="section-label">Uzmanlık Alanlarımız</p>
+      <h2 class="section-title">Estetik <em>Operasyonlar</em></h2>
+      <div class="gold-divider"></div>
+    </div>
+    <div class="services-grid">
+      <a href="liposuction.html" class="service-card">
+        <div class="service-number">01</div>
+        <h3>Liposuction</h3>
+        <p>İnatçı yağ birikintilerinin güvenli ve etkili yöntemlerle vücuttan uzaklaştırılması.</p>
+        <span class="service-arrow">Detaylı Bilgi →</span>
+      </a>
+      <a href="rinoplasti.html" class="service-card">
+        <div class="service-number">02</div>
+        <h3>Rinoplasti</h3>
+        <p>Burun estetiği ve fonksiyonel düzeltme operasyonlarında uzman yaklaşım.</p>
+        <span class="service-arrow">Detaylı Bilgi →</span>
+      </a>
+      <a href="karin-germe.html" class="service-card">
+        <div class="service-number">03</div>
+        <h3>Karın Germe</h3>
+        <p>Abdominoplasti ile karın bölgesinin yeniden şekillendirilmesi ve sıkılaştırılması.</p>
+        <span class="service-arrow">Detaylı Bilgi →</span>
+      </a>
+      <a href="lipodem.html" class="service-card">
+        <div class="service-number">04</div>
+        <h3>Lipödem Tedavisi</h3>
+        <p>Kronik yağ dokusu hastalığının cerrahi ve tıbbi yöntemlerle tedavisi.</p>
+        <span class="service-arrow">Detaylı Bilgi →</span>
+      </a>
+      <a href="yuz-germe.html" class="service-card">
+        <div class="service-number">05</div>
+        <h3>Yüz Germe</h3>
+        <p>Doğal görünümlü yüz gençleştirme operasyonları ile zamansız güzellik.</p>
+        <span class="service-arrow">Detaylı Bilgi →</span>
+      </a>
+      <a href="tel:+905466398033" class="service-card">
+        <div class="service-number">✦</div>
+        <h3>Randevu Al</h3>
+        <p>Ücretsiz ön konsültasyon için hemen arayın veya WhatsApp üzerinden ulaşın.</p>
+        <span class="service-arrow">0546 639 80 33 →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section">
+    <div class="about-img-wrap">
+      <img src="images/clinic.jpg" alt="Op. Dr. Turab İsmayilov Kliniği">
+      <div class="about-img-badge">
+        10+
+        <span>Yıl Deneyim</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">Hakkımda</p>
+      <h2 class="section-title">Op. Dr. Turab <em>İsmayilov</em></h2>
+      <div class="gold-divider" style="margin: 20px 0;"></div>
+      <p>Plastik, Estetik ve Rekonstrüktif Cerrahi alanında uzmanlaşmış Op. Dr. Turab İsmayilov, yılların deneyimi ve en güncel cerrahi teknikler ile hastalarına en doğal ve kalıcı sonuçları sunmaktadır.</p>
+      <p>Her hastanın benzersiz olduğuna inanan Dr. İsmayilov, kişiye özel tedavi planları hazırlamakta ve güvenli cerrahi ortamda mükemmel sonuçlar elde etmeyi hedeflemektedir.</p>
+      <div class="expertise">
+        <span class="expertise-tag">Liposuction</span>
+        <span class="expertise-tag">Rinoplasti</span>
+        <span class="expertise-tag">Karın Germe</span>
+        <span class="expertise-tag">Lipödem</span>
+        <span class="expertise-tag">Yüz Germe</span>
+        <span class="expertise-tag">Rekonstrüktif Cerrahi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <section class="contact-strip" id="iletisim">
+    <p class="section-label">İletişim</p>
+    <h2>Ücretsiz Konsültasyon <em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold)">Talep Edin</em></h2>
+    <p>Sorularınız için bize ulaşın, uzmanlarımız en kısa sürede size dönüş yapacaktır.</p>
+    <div id="form-placeholder"></div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <div id="wa-placeholder"></div>
+
+  <script src="common.js"></script>
+  <script>
+    document.getElementById('nav-placeholder').innerHTML = getNavHTML('index.html');
+    document.getElementById('footer-placeholder').innerHTML = getFooterHTML();
+    document.getElementById('wa-placeholder').innerHTML = getWhatsApp();
+    document.getElementById('form-placeholder').innerHTML = getFormHTML('Genel Bilgi');
+  </script>
+</body>
+</html>
