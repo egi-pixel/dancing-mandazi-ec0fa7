@@ -63,6 +63,7 @@ function getFooterHTML() {
     </div>
     <p>📍 Teşvikiye Mah., Sezai Selek Sokak No:17, Şişli / İstanbul</p>
     <p>📞 ${PHONE_DISPLAY}</p>
+    <p class="footer-disclaimer">Bu web sitesindeki içerikler bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz. Tedavi kararları için lütfen uzman bir hekime danışınız.</p>
     <p class="footer-copy">© 2025 Op. Dr. Turab İsmayilov. Tüm hakları saklıdır.</p>
   </footer>
   `;
